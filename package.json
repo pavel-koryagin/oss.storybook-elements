@@ -2,6 +2,19 @@
   "name": "@extpoint/storybook-elements",
   "type": "module",
   "version": "1.0.0",
+  "description": "The setup to use Storybook our way.",
+  "homepage": "https://github.com/pavel-koryagin/oss.storybook-elements#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavel-koryagin/oss.storybook-elements.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pavel-koryagin/oss.storybook-elements/issues"
+  },
+  "author": {
+    "name": "Pavel Koryagin",
+    "url": "https://github.com/pavel-koryagin"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
