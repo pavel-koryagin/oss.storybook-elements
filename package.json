@@ -2,13 +2,20 @@
   "name": "@extpoint/storybook-elements",
   "type": "module",
   "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts",
-    "./StorybookDecorator.css": "./src/StorybookDecorator.css"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./StorybookDecorator.css": "./dist/StorybookDecorator.css"
   },
   "scripts": {
+    "build": "tsdown",
     "lint": "oxlint --config oxlint.config.ts .",
-    "check-types": "tsc --noEmit --pretty"
+    "check-types": "tsc --noEmit --pretty",
+    "prepack": "pnpm check-types && pnpm lint && pnpm build"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.10",
@@ -24,10 +31,17 @@
     "oxlint": "1.85.0",
     "oxlint-tsgolint": "7.0.2003",
     "tailwindcss": "^3.4.14",
-    "storybook": "8.3.5"
+    "storybook": "8.3.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsdown": "0.23.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.21"
+  },
+  "peerDependencies": {
+    "@storybook/react": "^8.3.5",
+    "@types/react": "^18.3.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -36,10 +50,10 @@
     "access": "public"
   },
   "files": [
-    "src"
+    "dist"
   ],
   "packageManager": "pnpm@12.6.0",
   "engines": {
-    "node": ">=24"
+    "node": "^24.11.0 || >=26.0.0"
   }
 }

@@ -18,6 +18,11 @@
     "module": "ESNext",
     "moduleDetection": "force",
     "moduleResolution": "Bundler",
+    "paths": {
+      "@extpoint/storybook-elements": [
+        "./src/index.ts"
+      ]
+    },
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
