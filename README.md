@@ -16,7 +16,7 @@ Call `initializeStorybook()` in the host's Storybook preview before stories rend
 Import `@extpoint/storybook-elements/StorybookDecorator.css` for the component styles.
 
 The package provides ESM JavaScript, TypeScript declarations, and a separate stylesheet.
-The host supplies React 18, React DOM 18, React 18 types, and Storybook React 8 through peer dependencies.
+The host supplies matching React and React DOM versions (18 or 19), matching React types, and Storybook React 8 through peer dependencies.
 
 ## Development
 

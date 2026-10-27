@@ -54,9 +54,9 @@
   },
   "peerDependencies": {
     "@storybook/react": "^8.3.5",
-    "@types/react": "^18.3.11",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@types/react": "^18.3.11 || ^19.0.0",
+    "react": "^18.3.1 || ^19.0.0",
+    "react-dom": "^18.3.1 || ^19.0.0"
   },
   "license": "MIT",
   "publishConfig": {
