@@ -33,22 +33,10 @@ The build writes JavaScript, declarations, and CSS to `dist`.
 
 ## Publishing
 
-Update the version in `package.json` and commit the release changes, then inspect
-the release without uploading it:
-
-```sh
-pnpm publish --dry-run
-```
-
-Sign in to npm with an account that can publish under `@extpoint`, then publish:
-
 ```sh
 npm login
-pnpm publish
+pnpm run publish:all
 ```
-
-Packing or publishing automatically runs type checking, linting, and a fresh build.
-The public package contains `dist`, `README.md`, `LICENSE`, and `package.json`.
 
 ## License
 
