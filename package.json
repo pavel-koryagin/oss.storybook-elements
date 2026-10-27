@@ -1,7 +1,7 @@
 {
   "name": "@extpoint/storybook-elements",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The setup to use Storybook our way.",
   "homepage": "https://github.com/pavel-koryagin/oss.storybook-elements#readme",
   "repository": {
