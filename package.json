@@ -30,7 +30,7 @@
     "check-types": "tsc --noEmit --pretty",
     "prepack": "pnpm check-types && pnpm lint && pnpm build",
     "publish:npm": "pnpm publish",
-    "publish:github": "pnpm pack --pack-destination release && gh release create \"v$npm_package_version\" \"release/extpoint-storybook-elements-$npm_package_version.tgz\" --verify-tag --title \"v$npm_package_version\" --generate-notes",
+    "publish:github": "pnpm pack --pack-destination release && gh release create \"v$npm_package_version\" \"release/extpoint-storybook-elements-$npm_package_version.tgz\" --target \"$(git rev-parse HEAD)\" --title \"v$npm_package_version\" --generate-notes",
     "publish:all": "pnpm run publish:npm && pnpm run publish:github"
   },
   "devDependencies": {
